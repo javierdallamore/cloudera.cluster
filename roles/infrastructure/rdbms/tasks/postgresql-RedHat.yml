@@ -32,7 +32,6 @@
     proxy: "{{ proxy_url | default('') }}"
   when: not (skip_rdbms_repo_setup | default(False))
 
-
 - name: Disable built-in PostgreSQL module
   shell: |
     dnf -qy module disable postgresql

@@ -15,3 +15,6 @@ up:
 
 down:
 	docker-compose down -d
+
+copy_csrs:
+	docker cp ansible:/tmp/csrs .
